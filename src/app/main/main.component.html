@@ -23,17 +23,17 @@
             <h2 *ngIf="option === 2">{{ subtitle[2] }}</h2>
             <h2 *ngIf="option === 3">{{ subtitle[3] }}</h2>
        
-            <div class="container-cards">
-              <img class="col-3 img-responsive" src="../../assets/images/1c.jpg" alt="">
-              <!-- <img class="col-3 img-responsive" src="../../assets/images/1c.jpg" alt="">
-              <img class="col-3 img-responsive" src="../../assets/images/1c.jpg" alt="">
-              <img class="col-3 img-responsive" src="../../assets/images/1c.jpg" alt="">
-              <img class="col-3 img-responsive" src="../../assets/images/1c.jpg" alt="">
-              <img class="col-3 img-responsive" src="../../assets/images/1c.jpg" alt="">
-              <img class="col-3 img-responsive" src="../../assets/images/1c.jpg" alt="">
-              <img class="col-3 img-responsive" src="../../assets/images/1c.jpg" alt=""> -->
+            <div class="container-cards" [hidden]="state">
+              <img (click)="found(img1)" #img1 class="col-3 img-responsive " [src]="url" alt="1"  >
+              <img (click)="found(img2)" #img2 class="col-3 img-responsive img" [src]="url" alt="1">
+              <img (click)="found(img3)" #img3 class="col-3 img-responsive img" [src]="url1" alt="2">
+              <img (click)="found(img4)" #img4 class="col-3 img-responsive img" [src]="url1" alt="2">
+              <img (click)="found(img5)" #img5 class="col-3 img-responsive img" [src]="url2" alt="3">
+              <img (click)="found(img6)" #img6 class="col-3 img-responsive img" [src]="url2" alt="3">
+              <img (click)="found(img7)" #img7 class="col-3 img-responsive img" [src]="url3" alt="4">
+              <img (click)="found(img8)" #img8 class="col-3 img-responsive img" [src]="url3" alt="4">
             </div>
-            <div class="text-center figure">
+            <div class="text-center figure" [hidden]="!state">
               <img class="img-responsive" src="../../assets/images/init-end.gif" alt="">
             </div>
           </div>
