@@ -1,0 +1,8 @@
+<h1 [style.background]="'yellow'">{{ nombre }}</h1>
+<h2 *ngIf="mostrar !== false" [style.background]="color">{{ apellido }}</h2>
+<h3>{{ listaAnimals }}</h3>
+<h3>{{ listaAnimals[0] }}</h3>
+<ul>
+  <li *ngFor=" let lista of listaAnimals ">{{lista}}</li>
+
+</ul>

@@ -1,0 +1,43 @@
+<nav>
+    <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <img class="img-responsive" src="../../assets/images/corazon.png" alt="">
+            <img class="img-responsive" src="../../assets/images/espada.png" alt="">
+            <button (click)="start()"class="btn btn-danger">{{ button[0] }}</button>
+            <img class="img-responsive" src="../../assets/images/diamante.png" alt="">
+            <img class="img-responsive" src="../../assets/images/trebol.png" alt="">
+            <button (click)="end()" class="btn btn-danger">{{ button[1] }}</button>
+            <img class="img-responsive" src="../../assets/images/corazon.png" alt="">
+            <img class="img-responsive" src="../../assets/images/espada.png" alt="">
+          </div>
+        </div>
+      </div>
+</nav>
+<section>
+    <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 *ngIf="option === 0">{{ subtitle[0] }}</h2>
+            <h2 *ngIf="option === 1">{{ subtitle[1] }}</h2>
+            <h2 *ngIf="option === 2">{{ subtitle[2] }}</h2>
+            <h2 *ngIf="option === 3">{{ subtitle[3] }}</h2>
+       
+            <div class="container-cards">
+              <img class="col-3 img-responsive" src="../../assets/images/1c.jpg" alt="">
+              <!-- <img class="col-3 img-responsive" src="../../assets/images/1c.jpg" alt="">
+              <img class="col-3 img-responsive" src="../../assets/images/1c.jpg" alt="">
+              <img class="col-3 img-responsive" src="../../assets/images/1c.jpg" alt="">
+              <img class="col-3 img-responsive" src="../../assets/images/1c.jpg" alt="">
+              <img class="col-3 img-responsive" src="../../assets/images/1c.jpg" alt="">
+              <img class="col-3 img-responsive" src="../../assets/images/1c.jpg" alt="">
+              <img class="col-3 img-responsive" src="../../assets/images/1c.jpg" alt=""> -->
+            </div>
+            <div class="text-center figure">
+              <img class="img-responsive" src="../../assets/images/init-end.gif" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
