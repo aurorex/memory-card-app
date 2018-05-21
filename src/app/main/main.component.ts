@@ -10,7 +10,7 @@ export class MainComponent {
   public subtitle:Array<string> ;
   public option:Number;
   public button:Array<string>;
-  public cards:Array<string>
+  public cards:Array<string>;
 
   constructor() {
     this.subtitle = [
@@ -23,7 +23,7 @@ export class MainComponent {
     this.button = [
       'Start',
       'End'
-    ]
+    ],
     this.cards = [
       '../../assets/images/1c.jpg',
       '../../assets/images/2c.jpg',
@@ -132,9 +132,17 @@ export class MainComponent {
 
     ]
   }
-
+  
   start() {
     this.option = 1;
+
+     for(let j = 0;j < 4;j++){
+      let i =  Math.floor(Math.random() * (51 - 0)) + 0;
+      let url = this.cards[i];
+      console.log(url)
+      let urlPar = this.cards[i+52];
+      console.log(urlPar);
+    }
   }
 
   end() {
